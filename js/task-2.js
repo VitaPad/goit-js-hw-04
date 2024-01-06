@@ -1,6 +1,9 @@
 function calcAverageCalories(days) {
 let totalDays = 0;
 const daysValues = Object.values(days);
+if (daysValues.length === 0) {
+    return 0;
+  }
 for (const day of daysValues) {
 totalDays+=day.calories;
 }
